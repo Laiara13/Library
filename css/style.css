@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: helvetica, arial, sans-serif;
+}
+
+.header {
+  margin-top: 3vh;
+  height: 10vh;
+  /* background-color: #062030; */
+  background-color: #6495ed;
+  text-align: center;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+}
+
+.nav {
+  position: absolute;
+  bottom: 0;
+  height: 10vh;
+  line-height: 6vh;
+  width: 100vw;
+  background-color: #0000001a;
+}
+
+.a {
+  color: #fff;
+  display: inline-block;
+  padding: 2.2vw 7vw;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 2px;
+}
+header nav a:hover {
+  box-shadow: 0 0 0 1px #fff;
+}
+
+.input {
+  background-color: #6495ed;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  border-color: #000;
+  width: 15vw;
+  height: 3vh;
+  border: none;
+}
+
+.input::placeholder {
+  color: #ffffff;
+  font-size: 1vw;
+}
+
+input:hover {
+  box-shadow: 0 0 0 1px #fff;
+}
+
+.linha {
+  background-color: #b0c4de;
+  height: 1vh;
+}
+/*ACIMA HEADER*/
+
+.conjunto_dos_filmes {
+  color: #000;
+}
+
+.conjunto_dos_filmes_2 {
+  color: #000;
+}
+
+.filmes {
+  background-color: #6495ed;
+  width: 12vw;
+  text-align: center;
+  margin-left: 10vw;
+  margin-top: 4vh;
+  display: inline-grid;
+  height: 45vh;
+}
+
+.titulos {
+  width: 100%;
+  justify-self: center;
+}
+
+.info {
+  font-size: 1vw;
+  color: #000;
+}
+
+.h2 {
+  color: #000;
+  margin-top: 5vh;
+  font-size: 2vw;
+  margin-left: 1vw;
+}
+
+/*home*/
+.carousel {
+  overflow: hidden;
+  width: 50vw;
+  height: 52vh;
+}
+
+.banners {
+  width: 500% /* article w * 5 */;
+  overflow: hidden;
+  height: 100%;
+  animation: carousel 30s infinite;
+  position: relative;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+}
+
+article {
+  float: left;
+  width: 20%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Categorias */
+.categorias {
+  color: #000;
+  width: 30vw;
+  height: 8vh;
+  text-align: center;
+  margin-left: 35vw;
+  margin-bottom: 57vh;
+}
+
+.list {
+  color: #000;
+  font-size: 3vw;
+  text-decoration: none;
+  display: grid;
+  height: 8vh;
+  align-items: center;
+  margin-bottom: 3vh;
+  background-color: cadetblue;
+}
+
+/* A baixo area da sinopse de cada filme*/
+
+.pagina_do_livro {
+  color: #000;
+}
+
+.nome_do_livro {
+  color: #000;
+  margin-top: 6vh;
+  margin-bottom: 2vh;
+  text-align: center;
+  font-size: 3vw;
+}
+.para {
+  display: inline-block;
+  position: absolute;
+}
+
+.sinopse {
+  color: #000;
+  font-size: 2vw;
+  text-decoration: none;
+  display: inline-flex;
+  margin-bottom: 0vh;
+  margin-top: 1vh;
+  position: relative;
+  text-align: justify;
+  margin-right: 3vw;
+}
+
+.img_do_livro {
+  margin-right: 5vh;
+  color: #000;
+  width: 19vw;
+  margin-left: 5vw;
+  margin-bottom: 5vh;
+  height: auto;
+  display: inline-flex;
+}
+
+/* Comentarios*/
+
+
+
+
+/* Abaixo Footer */
+.linha_footer {
+  background-color: #b0c4de;
+  height: 0vh;
+  margin-top: 4vh;
+}
+
+footer {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+}
+
+.redes {
+  display: inline-flex;
+  font-size: 1.6vw;
+  margin-left: 0.5vw;
+  align-items: center;
+  color: #ffffff;
+}
+
+.rede {
+  /* background-color: #6495ed; */
+  background-color: #000000;
+  text-align: center;
+  width: 12vw;
+  margin-left: 5vh;
+  display: inline-flex;
+}
+
+.insta {
+  height: 6vh;
+  width: 3vw;
+}
+
+.face {
+  height: 6vh;
+  width: 3vw;
+}
+
+/*carrossel principal */
+
+@keyframes carousel{
+  0%    { left:0; }
+  11%   { left:0; }
+  12.5% { left:-100%; }
+  23.5% { left:-100%; }
+  25%   { left:-200%; }
+  36%   { left:-200%; }
+  37.5% { left:-300%; }
+  48.5% { left:-300%; }
+  50%   { left:-400%; }
+  61%   { left:-400%; }
+  62.5% { left:-300%; }
+  73.5% { left:-300%; }
+  75%   { left:-200%; }
+  86%   { left:-200%; }
+  87.5% { left:-100%; }
+  98.5% { left:-100%; }
+  100%  { left:0; }
+}
+
+@keyframes go{
+  0%    {  }
+  100%    { left:-300%; }
+}
+
+@keyframes back{
+  0%    { left:0; }
+  100%  { left:100%; }
+}
+/* Fim carrocel */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*https://github.com/matheusbattisti/horadecodar-htmlcss/blob/master/css/styles.css*/
+/*https://nicepage.com/pt/css-templates/preview/3-colunas-com-depoimentos-522658?device=desktop*/
+/*https://www.youtube.com/watch?v=4osx3LzMGH4/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* testmony container */
+#container-principal {
+	background: url('../img/banner7.jpg') no-repeat;
+	background-size: cover;
+	padding: 3em 0;
+}
+
+#container-principal h2, #container-principal p {
+	color: #FFF;
+	text-align: center;
+}
+
+#container-principal h2 {
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+
+#container-principal p {
+	margin-bottom: 50px;
+}
+
+.comentarios {
+	display: inline-block;
+	width: 19.5%;
+	text-align: center;
+}
+
+#container-principal .comentarios .user_mensage {
+	background-color: #FFF;
+	color: #666;
+	border-radius: 10px;
+	padding: 20px;
+	width: 50%;
+	position: relative;
+	margin: 35px auto;
+	font-style: italic;
+}
+
+.user_mensage:after {
+	content: "";
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #FFF;
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.comentarios img {
+  width: 12vw;
+  height: 17vh;
+  border: 1px solid #CCC;
+  border-radius: 50%;
+}
+
+.nome_user {
+	font-weight: bold;
+}
